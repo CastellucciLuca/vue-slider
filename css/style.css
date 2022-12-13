@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-color: rgb(4, 19, 44);
+}
 .container {
     height: 100vh;
     display: flex;
@@ -42,6 +44,7 @@
 .thumb {
     height: calc((300px) / 5);
     opacity: 0.5;
+    border: 2px solid white;
 }
 
 .thumb img {
@@ -77,7 +80,7 @@ EXTRA: in questo esempio gli accordion vengono creati
 usando 2 bordi di un quadratino ruotato di 45 gradi
 In una versione base si possono usare delle icone
 oppure i caratteri ∧ (&and;) e ∨ (&or;)
- */
+*/
 .prev::after {
     content: '';
     width: 10px;
