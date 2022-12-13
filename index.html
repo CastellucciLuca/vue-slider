@@ -16,14 +16,13 @@
                     <img :src="imageList[counter].image" alt="Spiderman" />
                     <div class="text">
                         <h3>{{imageList[counter].title}}</h3>
-                        <p>{{imageList[counter].text}}</p>
+                        <p>{{ imageList[counter].text }}</p>
                     </div>
                 </div>
                 <div class="thumbs">
                     <div class="prev" @click="previusBtn()"></div>
                     <div class="next" @click="nextBtn()"></div>
-
-                    <div class="thumb" v-for="(image, index) in imageList" :class="(index == counter) ? 'active' : '' " @click="counter = index">
+                    <div class="thumb" v-for="(image, index) in imageList" :class="(index == counter) ? 'active' : '' " @click="counter = index" @mouseover="!false">
                         <img :src="image.image" :alt="image.title" />
                     </div>
                 </div>
